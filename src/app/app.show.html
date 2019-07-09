@@ -1,0 +1,23 @@
+<input type="button" (click)="showemployee()" value="Add Data" aling="center" /><br><br><br>
+ <h2>Show All Employee</h2>
+
+<table border="1">
+    <tr>
+        <th>Employee Id</th>
+        <th>
+            Employee Name
+        </th>
+        <th>Employee Salary</th>
+        <th>Employee Department</th>
+        
+    </tr>
+    <tr *ngFor="let data of empall; let i=index">
+        <td>{{data.empId}}</td>
+        <td>{{data.empName}}</td>
+        <td>{{data.empSalary}}</td>
+        <td>{{data.empDepartment}}</td>
+      
+        
+    </tr>
+
+</table><br><br>

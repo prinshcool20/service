@@ -1,0 +1,28 @@
+<h2>Add employee..</h2>
+   <form name="add-employee"> <table>
+        <tr>
+            <td>Employee Id is:-</td>
+            <td><input type="text" name="EId" id="id" [(ngModel)]="empId"/></td>
+        </tr>
+        <tr>
+            <td>Employee Name:-</td>
+            <td><input type="text" name="EName" id="name" [(ngModel)]="empName"/></td>
+        </tr>
+        <tr>
+            <td>Employee Salary:-</td>
+            <td><input type="text" name="ESalary" id="salary" [(ngModel)]="empSalary"/></td>
+        </tr>
+        <tr>
+            <td>Employee Department:-</td>
+            <td><input type="text" name="ESalary" id="salary" [(ngModel)]="empDepartment"/></td>
+        </tr>
+       
+    </table></form><br><br>
+  
+   <show-emp [empid]="empId" [empname]="empName" [empsalary]="empSalary" [empdepartment]="empDepartment"></show-emp>
+
+ 
+
+   
+    
+    
